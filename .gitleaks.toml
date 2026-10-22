@@ -1,0 +1,21 @@
+title = "DevSecLearn gitleaks config"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Global allowlist untuk file yang bukan source code"
+
+paths = [
+  '''\.idea/''',              # konfigurasi WebStorm (UUID, session)
+  '''node_modules/''',         # dependency eksternal
+  '''\.git/''',                # metadata git
+  '''package-lock\.json''',    # lock file (hash integritas, bukan secret)
+  '''dist/''',                 # hasil build
+  '''build/''',                # hasil build
+  '''coverage/''',             # laporan test
+]
+
+regexes = [
+  '''786f119e-3404-4e16-93ed-915d136bce40''',  # UUID WebStorm tool window
+]
