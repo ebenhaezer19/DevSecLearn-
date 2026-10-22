@@ -1,21 +1,24 @@
 {
   "name": "devops",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "DevSecOps learning project",
+  "main": "index.js",
   "scripts": {
-    "run" : "node index.js",
-    "test" : "node test.js"
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ebenhaezer19/DevSecLearn-.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["devsecops", "ci", "learning"],
+  "author": "ebenhaezer19",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ebenhaezer19/DevSecLearn-/issues"
   },
-  "homepage": "https://github.com/ebenhaezer19/DevSecLearn-#readme"
+  "homepage": "https://github.com/ebenhaezer19/DevSecLearn-#readme",
+  "engines": {
+    "node": ">=20"
+  }
 }
